@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Displays the current running processes
+# Displays the current running processes with word bash
 
-ps aux
+ps auxf | grep bash
