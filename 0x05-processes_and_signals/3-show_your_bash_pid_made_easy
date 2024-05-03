@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Lists pids along with process names contains bash
+
+pgrep -l bash
