@@ -2,4 +2,4 @@
 
 arg = ARGV[0]
 
-puts arg.scan(/^\d{10}/)
+puts arg.scan(/^\d{10,10}$/)
