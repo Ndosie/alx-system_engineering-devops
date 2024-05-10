@@ -2,4 +2,4 @@
 
 arg = ARGV[0]
 
-puts arg.scan(/ht{2,5}n/)
+puts arg.scan(/hbt{2,5}n/)
