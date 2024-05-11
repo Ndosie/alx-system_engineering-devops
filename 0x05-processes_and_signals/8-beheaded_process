@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kill infinity process
+
+pkill --signal SIGKILL -f 7-highlander
