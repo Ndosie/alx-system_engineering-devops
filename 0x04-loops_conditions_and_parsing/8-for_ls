@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # This scripts lists files in the current directory
 
-for i in $(ls); do
+l=$(ls)
+
+for i in $l; do
 	echo "$i" | cut -d '-' -f 2
 done
