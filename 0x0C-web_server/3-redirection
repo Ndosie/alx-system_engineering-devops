@@ -22,6 +22,6 @@ SERVER_CONFIG=\
 	}
 }"
 
-bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default
+bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 
 service nginx start
