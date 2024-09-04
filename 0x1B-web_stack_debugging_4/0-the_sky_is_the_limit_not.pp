@@ -5,7 +5,7 @@ exec { 'increase_limit':
   path    => '/bin'
 }
 
-exce { 'restart':
+-> exce { 'restart':
   command => 'sudo service nginx restart'
   path    => '/bin'
 }
