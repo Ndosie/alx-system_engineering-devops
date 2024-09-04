@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Get apache run on a container and return a page
+
+echo "Hello Holberton" > /var/www/html/index.html
+service apache2 start
