@@ -2,10 +2,10 @@
 
 exec { 'increase_limit':
   command => 'sudo sed -i "s/15/4096/" /etc/default/nginx',
-  path    => '/bin'
+  path    => '/usr/local/bin/:/bin/'
 }
 
 -> exce { 'restart':
   command => 'sudo service nginx restart'
-  path    => '/bin'
+  path    => '/etc/init.d/'
 }
