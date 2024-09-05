@@ -7,10 +7,10 @@ def number_of_subscribers(subreddit):
     """Returns numbers of redit subscribers"""
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {
-        "User-Agent": "ubuntu_20.04:0x16.api.advanced:v1.0.0"
+        "User-Agent": "linux:0x16.api_advanced:v1.0.0 (by /u/endosi24)"
     }
-    res = requests.get(url, headers=headers, allow_redirects=False)
-    if res.status_code == 404:
+    response = requests.get(url, headers=headers)
+    if response.status_code != 200:
         return 0
-    results = res.json().get("data")
+    results = response.json().get("data")
     return results.get("subscribers")
